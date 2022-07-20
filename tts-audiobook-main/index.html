@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Voice Note App</title>
+    <meta name="description" content="A Voice Note App that allows you to take voice and/or text notes and play them back.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CDN CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-0Mou2qXGeXK7k/Ue/a1hspEVcEP2zCpoQZw8/MPeUgISww+VmDJcy2ri9tX0a6iy" crossorigin="anonymous">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body >
+    <!-- Just an image -->
+<nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/Swecha.png" width="100" height="60" alt="" href = "index.html">
+    </a>
+    <a class="navbar-brand" href = "about.html">
+        About
+      </a>
+  </nav>
+    <div class="container-fluid align-center colour" >
+        <h1>TTS Audio Book</h1>
+        <p class="page-description">this app allows you to take voice and/or text notes and play them back</p>
+        <hr>
+        <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+        <div class="app">
+            <div class="row">
+                <div class="col-md-6 align-center">
+                    <h2>Add New Voice Note</h2>
+                    <div class="input-single">
+                        <textarea id="note-textarea" placeholder="    Create a new note by typing or using voice recognition." rows="6"></textarea>
+                    </div>
+                    <button id="start-record-btn" class="button-24" style="background-color: #143F6B" title="Start Recording">Start Recognition</button>
+                    <button id="pause-record-btn" class="button-24" style="background-color: #143F6B" title="Pause Recording">Pause Recognition</button>
+                    <button id="save-note-btn" class="button-24" style="background-color: #143F6B" title="Save Note">Save Note</button>
+                    <p id="recording-instructions">Press the
+                        <strong>Start Recognition</strong> button and allow access.</p>
+                </div>
+                <div class="col-md-6 align-center">
+                    <h2>My Voice Notes</h2>
+                    <ul id="notes">
+                        <li>
+                            <p class="no-notes">You don't have any notes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /app -->
+    </div>
+
+    <hr>
+
+    <!-- /footer -->
+    <footer class="footer">
+        <p class="cp-text">
+            © Copyright 2022 TEAM 6 
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
